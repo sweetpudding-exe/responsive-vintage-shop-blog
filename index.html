@@ -1,94 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Arianna's Assignment">
-    <meta name="author" content="Arianna Pelella">
-    <title>Vintage Amsterdam</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Arianna's Assignment">
+        <meta name="author" content="Arianna Pelella">
+        <title>Vintage Amsterdam</title>
+        <link rel="stylesheet"  type="text/css" href="css/styles.css">
+        <link rel="icon" type="image/png" href="img/home/logo.svg">
+    </head>
+    <body>
 
-    <!-- HEADER -->
-    <header id="website_logo">
-        <img src="img/home/homepage-banner.jpg" alt="Banner">
-        <img src="img/home/logo7.svg" alt="Logo">
-    </header>
+        <nav class="menu-mobile">
+            <!-- Checkbox nascosta per attivare il menu -->
+            <input type="checkbox" id="menu-toggle">
 
-    <!-- NAVIGATION -->
-    <nav id="website_nav">
-        <img src="img/home/logo.svg" alt="Logo">
-        <ul>
-            <li><a href="#" class="lora">Home</a></li>
-            <li><a href="#" class="lora">About</a></li>
-            <li><a href="#" class="lora">Shops</a></li>
-            <li><a href="#" class="lora">Markets</a></li>
-            <li><a href="#" class="lora">Contact</a></li>
-        </ul>
-    </nav>
+            <!-- Icona hamburger -->
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-    <!-- PAYOFF SECTION -->
-    <section id="website_payoff">
-        <h4 class="lora"><span>discover</span></h4>
-        <h1 class="perandory">vintage fashion</h1>
-        <h4 class="lora">amsterdam</h4>
-        <p class="lora" id="website_payoff_1">
-            Welcome to your guide to Amsterdam’s vintage fashion scene.
-        </p>
-        <p class="lora" id="website_payoff_2">
-            From hidden boutiques to lively flea markets, this website helps you explore the city’s unique retro culture.
-            Whether you’re a local or a visitor, you’ll find inspiration, practical tips, and must-visit shops.
-        </p>
-    </section>
+            <!-- Menu di navigazione -->
+            <ul class="nav-links">
+                <li><img src="img/home/logo.svg" alt="hanger" title="logo"></li>
+                <li><a href="index.html" class="lora">Home</a></li>
+                <li><a href="#" class="lora">About</a></li>
+                <li><a href="#" class="lora">Shops</a></li>
+                <li><a href="markets.html" class="lora">Markets</a></li>
+                <li><a href="contact.html" class="lora">Contact</a></li>
+            </ul>
+        </nav>
 
-    <!-- MAIN SECTIONS -->
-    <section id="main_pic1"></section>
-    <section id="main_txt1">
-        <h4 class="lora">about this</h4>
-        <h3 class="perandory">website</h3>
-        <p>
-            This site is designed to introduce you to the world of vintage fashion in Amsterdam.
-            It offers curated guides, stories, and tips so you can easily navigate the city’s best second-hand treasures.
-        </p>
-    </section>
+        <header class="website_logo">
+            <img src="img/home/homepage-banner.jpg" alt="windmill" title="banner-homepage">
+            <img src="img/home/logo7.svg" alt="Vintage Amsterdam" title="logo">
+        </header>
+        <nav class="menu-bigscreen">
+            <ul>
+                <li>
+                    <img src="img/home/logo.svg" alt="hanger" title="logo">
+                </li>
+                <li>
+                    <a href="index.html" class="lora">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="lora">About</a>
+                </li>
+                <li>
+                    <a href="#" class="lora">Shops</a>
+                </li>
+                <li>
+                    <a href="markets.html" class="lora">Markets</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="lora">Contact</a>
+                </li>
+            </ul>
+        </nav>
 
-    <section id="main_pic2"></section>
-    <section id="main_txt2">
-        <h4 class="lora">why vintage in</h4>
-        <h3 class="perandory">amsterdam</h3>
-        <p>
-            Amsterdam is known for its creative neighborhoods and diverse style.
-            Vintage fashion here is more than clothing, it’s part of the city’s culture, blending sustainability, individuality, and history.
-        </p>
-    </section>
+        <section class="website_payoff">
+            <section class="title-row">
+                <h4 class="lora">Discover</h4>
+                <h1 class="perandory">Vintage Fashion</h1>
+                <h4 class="lora">Amsterdam</h4>
+            </section>
 
-    <section id="main_pic3"></section>
-    <section id="main_txt3">
-        <h4 class="lora">how to</h4>
-        <h3 class="perandory">explore</h3>
-        <p>
-            Each page of this website points you to a new part of the vintage experience.
-            Dive into the Shops page to see the best vintage shops, explore Markets page, or learn more in the About section.
-        </p>
-    </section>
+            <section class="paragraph">
+                <p>
+                Welcome to your guide to <em>Amsterdam’s vintage fashion</em> scene. From hidden boutiques 
+                to lively flea markets, this website helps you explore the city’s unique retro culture. 
+                Whether you’re a local or a visitor, you’ll find inspiration, practical tips, and must-visit shops.
+                </p>
+            </section>
 
-    <!-- FOOTER -->
-    <footer id="website_footer">
-        <img src="img/home/logo.svg" alt="Logo">
-        <section>
-            <h6>use cases</h6>
-            <p>ui design</p><p>ui design</p><p>ui design</p><p>ui design</p><p>ui design</p><p>ui design</p>
+            <section class="cta-text">
+                <strong>Explore the best vintage shops in Amsterdam</strong>
+            </section>
+
+            <a href="#" class="button">Explore</a>
         </section>
-        <section>
-            <h6>use cases</h6>
-            <p>ui design</p><p>ui design</p><p>ui design</p><p>ui design</p><p>ui design</p><p>ui design</p>
-        </section>
-        <section>
-            <h6>use cases</h6>
-            <p>ui design</p><p>ui design</p><p>ui design</p><p>ui design</p><p>ui design</p><p>ui design</p>
-        </section>
-    </footer>
 
-</body>
+
+        <section class="article">
+                
+            <section id="main_pic1">1&nbsp;</section>
+            <section id="main_txt1">
+                <h4 class="lora">about this</h4>
+                <h3 class="perandory">website</h3>
+                <p>
+                    This site is designed to introduce you to the world of vintage fashion in Amsterdam.
+                    It offers curated guides, stories, and tips so you can easily navigate the city’s best second-hand treasures.
+                    <a href="#" class="lora">Read more...</a>
+                </p>
+            </section>
+        
+            <section id="main_txt2">
+                <h4 class="lora">why vintage in</h4>
+                <h3 class="perandory">amsterdam</h3>
+                <p>
+                    Amsterdam is known for its creative neighborhoods and diverse style.
+                    Vintage fashion here is more than clothing, it’s part of the city’s culture, blending sustainability, individuality, and history.
+                </p>
+            </section>
+            <section id="main_pic2">2&nbsp;</section>
+
+            <section id="main_pic3">3&nbsp;</section>                
+
+            <section id="main_txt3">
+                <h4 class="lora">how to</h4>
+                <h3 class="perandory">explore</h3>
+                <p>
+                    Each page of this website points you to a new part of the vintage experience.
+                    Dive into the Shops page to see the best vintage <a href="#" class="lora">Shops</a>, explore <a href="markets.html" class="lora">Markets</a> page, or learn more in the <a href="#" class="lora">About</a> section.
+                </p>
+            </section>
+
+        </section>
+
+        <!-- COOKIE MESSAGE -->
+        <input type="checkbox" id="cookie-toggle" class="cookie-toggle">
+
+        <section class="cookie-message">
+            <p>
+                We use cookies to improve your experience on our website. By continuing to browse, you accept our <a href="#">Cookie Policy</a>.
+            </p>
+            <label for="cookie-toggle" class="cookie-close">Got it!</label>
+        </section>
+
+        <footer id="website_footer">
+
+            <p class="footer-title lora">Thank You For Your Curiosity</p>
+
+            <table class="footer-table">
+                <tr>
+                <!-- Column 1 -->
+                <td class="column perandory">
+                <h3>ESPLORE</h3>
+                </td>
+
+                <!-- Column 2 -->
+                <td class="column lora">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Shops</a></li>
+                    <li><a href="markets.html">Markets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                </td>
+
+                <!-- Column 3 -->
+                <td class="column perandory">
+                <h3>SOCIALS</h3>
+                </td>
+
+                <!-- Column 4 -->
+                <td class="column lora">
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+                </td>
+
+                <!-- Column 5 -->
+                <td class="column lora">
+                <p>&copy;VintageAmsterdam</p>
+                <p>Netherlands</p>
+                </td>
+
+                <!-- Column 6 -->
+                <td class="column logo">
+                    <img src="img/home/logo.svg" alt="hanger" title="logo">
+                </td>
+                </tr>
+            </table>
+        </footer>
+    </body>
 </html>

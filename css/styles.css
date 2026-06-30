@@ -1,0 +1,1171 @@
+body 
+{ 
+    height: 100%; 
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* General design rules*/
+
+.lora
+{
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.perandory
+{
+    font-family: 'Perandory', sans-serif;    
+    font-weight: 400;                                   
+}
+
+.perandory::first-letter , .lora::first-letter
+{
+    text-transform: uppercase;                                  
+}
+
+
+
+/*     HOMEPAGE    */
+/* BANNER */
+
+.website_logo
+{
+    position: relative;
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+}
+
+.website_logo img:nth-child(1)
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.website_logo img:nth-child(2)
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-85%, -50%);
+    z-index: 2;
+    width: 57%;
+    height: 190px;
+}
+
+/* NAVBAR */
+
+a:visited
+{
+ color: #FFF6E4;
+}
+
+a:active
+{
+    color: #FFF6E4;
+}
+
+nav 
+{
+    height: 95px;
+    background-color: #284139;
+}
+
+nav ul
+{
+    width: 100%;
+    height: 95px;
+    display: grid;    
+    grid-template-columns: repeat(8, 12.5%);
+}
+
+nav li
+{
+    position: relative;
+    width: 100%;
+    height: 95px;
+    text-align: center;
+    list-style: none;  
+}
+
+nav ul li:nth-child(1) 
+{
+    grid-column-start: 2;
+}
+
+nav > ul > li > img
+{
+    width: 100%;
+    height: 95px;
+}
+
+nav li a 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(20px, 2.5vw, 25px);
+    text-decoration: none;
+    text-align: center;
+    color: #FFF6E4;
+    width: 100%;
+    height: 95px;
+    line-height: 95px;
+}
+
+nav li:hover
+{
+    background-color: #809076;
+}
+
+/*  HAMBURGER MENU */
+.menu-mobile
+{
+    display: none;
+}
+
+.hamburger 
+{
+    display: none; /* nascosto su desktop */
+    cursor: pointer;
+    width: 30px;
+    height: 22px;
+    position: relative;
+    z-index: 9999; /* sopra al menu */
+}
+
+.hamburger span 
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #FFF6E4;
+    transition: 0.3s;
+}
+
+.hamburger span:nth-child(1) { top: 0; }
+.hamburger span:nth-child(2) { top: 9px; }
+.hamburger span:nth-child(3) { bottom: 0; }
+
+
+/* PAYOFF & CTA */
+
+.website_payoff 
+{
+    background-color: #FFF6E4;
+    color: #284139;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    padding: 10vh 15vw;
+    row-gap: 1em;
+    font-family: "Lora", serif;
+}
+
+.title-row 
+{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    text-align: center;
+    column-gap: 1em;
+}
+
+.title-row h4 
+{
+    color: #BB6830;
+    font-size: clamp(20px, 2.2vw, 28px);
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.title-row h4:nth-child(1) 
+{
+    justify-self: start;
+}
+
+.title-row h4:nth-child(3) 
+{
+    justify-self: end;
+}
+
+.title-row h1 
+{
+    font-size: clamp(30px, 4.5vw, 60px);
+    margin: 0;
+    color: #284139;
+}
+
+.paragraph 
+{
+    justify-self: start;
+}
+
+.paragraph p 
+{
+    font-style: italic;
+    word-spacing: normal;
+    font-size: clamp(18px, 2vw, 22px);
+    margin: 0;
+}
+
+.cta-text 
+{
+    font-size: clamp(18px, 2vw, 22px);
+    justify-self: center;
+    color: #284139;
+}
+
+.button:hover 
+{
+    background-color: #809076;
+}
+
+
+/* ARTICLE SECTION */
+
+.article 
+{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+}
+
+#main_pic1, #main_pic2, #main_pic3 
+{
+    width: 100%;
+    object-fit: cover;
+    max-height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#main_pic1 
+{
+    background-image: url("../img/home/homepage_img1.jpg");
+}
+
+#main_pic2 
+{
+    background-image: url("../img/home/homepage-img2.png");
+}
+
+#main_pic3 
+{
+    background-image: url("../img/home/homepage-img3.png");
+}
+
+#main_txt1, #main_txt2, #main_txt3 
+{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 4em 7vw;
+    background-color: #809076;
+}
+
+.article section h4 
+{
+    font-size: clamp(22px, 2vw, 28px);
+    text-transform: capitalize;
+    color: #F8D794;
+}
+
+.article section h3 
+{
+    font-size: clamp(32px, 3vw, 46px);
+    color: #F8D794;
+    text-indent: 0.5em;
+}
+
+.article section p 
+{
+    font-size: clamp(18px, 2vw, 24px);
+    color: #FFF6E4;
+    border-top: 1px solid #284139;
+    padding-top: 1em;
+}
+
+.article a 
+{
+    color: #FFF6E4;
+    font-style: italic;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #FFF6E4;
+    display: grid;
+}
+
+.footer-title 
+{
+    color: #BB6830;
+    font-size: 22px;
+    margin-bottom: 4vh;
+}
+
+.footer-table 
+{
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    border-top: 1px solid #284139;
+}
+
+.column 
+{
+    vertical-align: top;
+    padding: 4vh 1vw;
+}
+
+.column h3 
+{
+    font-size: 14px;
+    color: #BB6830;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.column ul 
+{
+    list-style: none;
+    padding: 0;
+}
+
+.column ul li 
+{
+    margin-bottom: 8px;
+}
+
+.column a 
+{
+    color: #284139;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.column p 
+{
+    font-size: 16px;
+    color: #284139;
+    line-height: 1.6;
+}
+
+.logo img
+{
+    float: right;
+    height: 110px;
+}
+
+.footer-table td:nth-child(even) 
+{
+    background-color: #809076;
+}
+
+.footer-table td:nth-child(odd) 
+{
+    background-color: #F8D794;
+}
+
+.footer-table td p::first-letter {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/*    CONTACT PAGE     */
+
+.qanda 
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #FFF6E4;
+    height: 735px;
+    overflow: hidden;
+}
+
+.qanda-text 
+{
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* colonna larga e colonna stretta */
+    grid-template-rows: auto auto auto;
+    padding: 25vh 6vw;
+    border-color: #284139;
+    border-style: dashed;
+    border-width: 1px;
+}
+
+.qanda-text h1
+{
+    color: #BB6830;
+    font-size: clamp(30px, 4.5vw, 60px);
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+
+.qanda-text img 
+{
+    grid-column: 2 / 3; 
+    grid-row: 1 / 3;
+    justify-self: center;
+    align-self: center;
+    padding-left: 2vh;
+    width: 100px;
+}
+
+.qanda-text p:nth-child(3) 
+{
+    color: #284139;
+    font-size: clamp(18px, 2vw, 24px);
+}
+
+.qanda-text p:nth-child(4) 
+{
+    color: #284139;
+    grid-column: 1 / -1;
+    padding-top: 10px;
+    font-size: clamp(18px, 2vw, 24px);
+}
+
+.qanda-scroll 
+{
+    grid-column: span 3;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.scroll-section
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto;
+    color: #284139;
+    border-bottom: 1px solid #284139;
+    padding: 8vh 5vw;
+}
+
+.scroll-section:nth-child(4)
+{
+    border-bottom: none;
+}
+
+.scroll-section h4
+{
+    align-self: center;
+    font-size: clamp(18px, 2vw, 25px);
+    color: #BB6830;
+}
+
+.scroll-section p
+{
+    padding-bottom: 10px;
+    font-size: clamp(18px, 2vw, 22px);
+}
+
+.scroll-section p:nth-child(4)
+{
+    padding-top: 10px;
+    border-top: 1px solid #284139;
+}
+
+.scroll-section span
+{
+    grid-column: 1/3;
+    justify-self: center;
+    align-self: center;
+    content: "";
+    display: block;
+    width: 60%;
+    height: 1px;
+    background-color: #284139;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*FORM*/
+.contact-us
+{
+    background-color: #809076;
+    padding: 150px;
+}
+
+.contact-us h2, .contact-us p
+{
+    max-width: 275px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact-us h2
+{
+    color: #F8D794;
+    font-size: clamp(32px, 3vw, 46px);
+    margin-bottom: 10px;
+}
+
+.contact-us p
+{
+    margin-bottom: 40px;
+    color: #284139;
+    font-size: clamp(18px, 2vw, 22px);
+}
+
+.contact-form
+{
+    display: grid;
+    gap: 45px; /* spazio tra le righe */
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 60px;
+    font-family: sans-serif;
+    background-color: #FFF6E4;
+}
+
+.form-row 
+{
+    display: grid;
+    gap: 20px; /* spazio tra i campi della stessa riga */
+}
+
+/* Prima riga: 3 colonne (prefix, name, surname) */
+.contact-form fieldset:first-of-type .form-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    gap: 10px;
+}
+
+/* Seconda riga: 2 colonne (phone, email) */
+.contact-form fieldset:last-of-type .form-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+
+/* Terza riga: full width (textarea) */
+.contact-form > .form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.form-field 
+{
+    display: grid;
+    grid-template-rows: auto 1fr; /* prima riga: label, seconda: input/textarea */
+    gap: 5px;                     /* spazio tra label e input */
+}
+
+label 
+{
+    margin-bottom: 5px;
+    color: #BB6830;
+}
+
+input, textarea 
+{
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 3px solid #F8D794;
+    border-left: 3px solid #F8D794;
+    border-right: 3px solid #F8D794;
+    background-color: #FFF6E4;
+    width: 100%; /* occupa tutta la colonna */
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus
+{
+    border-bottom: 3px solid #284139;
+    border-left: 3px solid #284139;
+    border-right: 3px solid #284139;
+    outline: none;
+}
+
+input[type="submit"]
+{
+    border: none;
+    width: fit-content;
+    padding: 0.8em 2em;
+}
+
+input[type="checkbox"]
+{
+    display: none;
+}
+
+textarea:focus
+{
+    border-top: 3px solid #284139;
+}
+
+textarea 
+{
+    border-top: 3px solid #F8D794;
+    resize: vertical; /* permette di ridimensionare in altezza */
+    min-height: 150px;
+}
+
+.button
+{
+    display: inline-block;
+    background-color: #284139;
+    color: #FFF6E4;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: clamp(18px, 1vw, 25px);
+    padding: 0.8em 2em;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.25);
+    justify-self: center;
+    cursor: pointer;
+}
+
+
+/*      MARKETS     */
+.markets-section1 
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 colonne in totale */
+    align-items: center;
+    background-color: #809076;
+}
+
+.markets-section1 aside 
+{
+  grid-column: 1 / span 2; /* occupa 2 colonne */
+}
+
+#markets-pic1, #markets-pic2, #markets-pic3, #markets-pic4
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#markets-pic1 
+{
+    background-image: url("../img/markets/markets.png");
+}
+
+#markets-pic2
+{
+    background-image: url("../img/markets/markets1.png");
+}
+
+#markets-pic3
+{
+    background-image: url("../img/markets/markets3.png");
+}
+
+#markets-pic4
+{
+    background-image: url("../img/markets/markets4.png");
+}
+
+.markets-section1 article
+{
+    grid-column: 3 / span 3; /* occupa le ultime 3 colonne */
+    font-size: clamp(18px, 2vw, 22px);
+    background-color: #284139;
+    min-height: 250px;
+    padding: 60px;
+    margin: 20vh 10vw;
+}
+
+.markets-section1 h3
+{
+    color: #F8D794;
+    font-style: italic;
+    font-size: clamp(20px, 2.2vw, 28px);
+}
+
+.markets-section1 h2
+{
+    color: #F8D794;
+    font-size: clamp(32px, 3vw, 46px);
+    padding-left: 15px;
+}
+
+.markets-section1 p
+{
+    color: #FFF6E4;
+    font-size: clamp(18px, 2vw, 22px);
+}
+
+/* SECTION 2*/
+
+#markets-pic2, #markets-pic3, #markets-pic4
+{
+    height: 75vh;
+}
+
+.markets-section2
+{
+    background-color: #FFF6E4;
+}
+
+.section-title
+{
+    font-size: clamp(32px, 3vw, 42px);
+    color: #BB6830;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.markets-grid
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+
+.market 
+{
+    background-color: #FFF6E4;
+    border-right: 1px solid #284139;
+}
+
+.market:last-child 
+{
+    border-right: none;
+}
+
+.market h4 
+{
+    color: #BB6830;
+    font-size: clamp(18px, 3vw, 30px);
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.market p 
+{
+    color: #284139;
+    font-size: clamp(18px, 2vw, 22px);
+    padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* tips section */
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #809076;
+    color: #FFF6E4;
+    align-items: center; 
+}
+
+.tip {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 75px 60px;
+    border-right: 1px solid #284139;
+    align-items: center; 
+}
+
+.tip:last-child 
+{
+    border-right: none;
+}
+
+.tip h4 
+{
+    grid-column: 1 / 2;
+    color: #F8D794;
+    font-size: clamp(18px, 2vw, 25px);
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.tip p 
+{
+    grid-column: 1 / 2;
+    color: #FFF6E4;
+    font-size: clamp(18px, 2vw, 22px);
+}
+
+.tip figure
+{
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+}
+
+.tip figure img
+{
+    width: 100px;
+}
+
+/* Checkbox nascosto */
+.cookie-toggle 
+{
+    display: none;
+}
+
+/* Checkbox nascosto */
+.cookie-toggle 
+{
+    display: none;
+}
+
+/* Stile messaggio cookie usando grid */
+.cookie-message 
+{
+    position: fixed;
+    bottom: 20px; /* distanza dal fondo */
+    left: 50%;    /* centro orizzontale */
+    transform: translateX(-50%); /* centratura precisa */
+    background-color: #284139;
+    color: #FFF6E4;
+    padding: 20px 30px;
+    text-align: center;
+    font-size: clamp(14px, 2vw, 18px);
+    display: grid;
+    grid-template-columns: 1fr auto; /* testo a sinistra, bottone a destra */
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
+    z-index: 9999;
+}
+
+/* Link dentro il messaggio */
+.cookie-message a 
+{
+    color: #F8D794;
+    text-decoration: underline;
+}
+
+/* Bottone chiudi */
+.cookie-close 
+{
+    background-color: #F8D794;
+    color: #284139;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Nascondi il messaggio quando il checkbox è selezionato */
+.cookie-toggle:checked + .cookie-message 
+{
+    display: none;
+}
+
+
+/* RESPONSIVE */
+
+/* Media query per schermi piccoli (mobile) */
+@media (max-width: 768px) {
+
+     /* Mostra l’icona hamburger */
+    .hamburger 
+    {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+
+    .menu-mobile
+    {
+        display: block;
+    }
+
+    /* Nasconde i link finché il menu non è aperto */
+    .nav-links 
+    {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 70%;
+        background-color: #284139;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        transition: right 0.3s ease;
+        z-index: 9998;
+    }
+
+    /* Mostra il menu quando il checkbox è attivo */
+    #menu-toggle:checked ~ .nav-links 
+    {
+        right: 0;
+    }
+
+    /* Nasconde il logo nel menu mobile (opzionale) */
+    .menu-bigscreen
+    {
+        display: none;
+    }
+
+    /* Adatta i link */
+    .nav-links li a 
+    {
+        font-size: 22px;
+        color: #FFF6E4;
+    }
+
+    nav ul 
+    {
+        display: block; /* disattiva la grid */
+    }
+
+    .title-row 
+    {
+        grid-template-columns: 1fr; 
+        text-align: center;
+    }
+
+    .title-row h4:nth-child(3) 
+    {
+        justify-self: center;
+    }
+
+    .title-row h4:nth-child(1) 
+    {
+        padding-bottom: 10px;
+        justify-self: center;
+    }
+
+    /* Sezione article: immagini con testo sotto */
+    .article
+    {
+        grid-template-columns: 1fr; /* una colonna unica */
+    }
+
+    #main_pic1,
+    #main_pic2,
+    #main_pic3
+    {
+        height: 300px;
+    }
+
+    #main_pic1, #main_txt1,
+    #main_pic2, #main_txt2,
+    #main_pic3, #main_txt3 
+    {
+        grid-column: 1 / -1;
+    }
+
+    #main_pic1 { order: 1; }
+    #main_txt1 { order: 2; }
+    #main_pic2 { order: 3; }
+    #main_txt2 { order: 4; }
+    #main_pic3 { order: 5; }
+    #main_txt3 { order: 6; }
+
+    /* Footer: colonne in verticale */
+    .footer-table 
+    {
+        display: grid;
+        grid-template-columns: 1fr; /* una colonna unica */
+    }
+
+    .footer-table td 
+    {
+        display: block; /* ogni cella diventa blocco */
+        width: 100%;
+        padding: 10px;
+    }
+
+    .logo img
+    {
+        float: unset;
+    };
+
+      /* Nasconde la prima immagine (header della pagina) */
+    .markets-section1 aside#markets-pic1 
+    {
+        display: none;
+    }
+
+    /* Prima sezione: fa diventare l’articolo a larghezza piena */
+    .markets-section1 
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .markets-section1 article 
+    {
+        grid-column: 1 / -1;
+        margin: 0;
+        padding: 40px 20px;
+    }
+
+    /* Sezione 2: le tre card dei mercati una sotto l’altra */
+    .markets-grid 
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .market 
+    {
+        border-right: none;
+        border-bottom: 1px solid #284139;
+    }
+
+    .market:last-child 
+    {
+        border-bottom: none;
+    }
+
+    /* Immagine sopra e testo sotto */
+    .market figure 
+    {
+        order: -1; /* porta l'immagine sopra al testo */
+    }
+
+    /* Tips: uno sotto l’altro */
+    .tips-grid 
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .tip 
+    {
+        border-right: none;
+        border-bottom: 1px solid #284139;
+        grid-template-columns: 1fr; /* testo e immagine in verticale */
+        text-align: center;
+    }
+
+    .tip:last-child 
+    {
+        border-bottom: none;
+    }
+
+    .tip figure 
+    {
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: center;
+        margin-top: 20px;
+    }
+
+    /* Q&A: verticale */
+    .qanda 
+    {
+        display: grid;
+        grid-template-columns: 1fr; /* una colonna unica */
+        grid-auto-rows: auto;
+        height: auto; /* altezza adattiva */
+        gap: 20px;
+    }
+
+    .qanda-text 
+    {
+        grid-column: 1 / -1; /* occupa tutta la larghezza */
+        grid-template-columns: 1fr; /* colonna unica */
+        grid-template-rows: auto;
+        padding: 20px;
+        border: none; /* rimuove bordi se vuoi */
+    }
+
+    .qanda-text img 
+    {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 20px;
+        width: 80px; /* più piccolo su mobile */
+    }
+
+    .qanda-text p 
+    {
+        grid-column: 1;
+        padding: 5px 0;
+    }
+
+    /* Q&A scroll */
+    .qanda-scroll 
+    {
+        grid-column: 1 / -1;
+        height: auto;
+        overflow: visible;
+    }
+
+    .scroll-section 
+    {
+        grid-template-columns: 1fr; /* tutto verticale */
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .scroll-section span 
+    {
+        width: 100%; /* linea orizzontale piena */
+    }
+
+    /* FORM: fullscreen e fields verticali */
+    .contact-us 
+    {
+        padding: 0;
+        min-height: 100vh; /* occupa tutto lo schermo */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact-us h2,
+    .contact-us p 
+    {
+        max-width: 90%;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    /* Form: grande quanto lo schermo */
+    /* Prima riga: 3 colonne (prefix, name, surname) */
+    .contact-form fieldset:first-of-type .form-row,
+    .contact-form fieldset:last-of-type .form-row,
+    .contact-form > .form-row
+    {
+        grid-template-columns: 1fr;
+    }
+
+    /* Tutti i field uno sotto l’altro */
+    .form-row
+    {
+        grid-template-columns: none; /* colonna unica */
+    }
+
+    input, textarea 
+    {
+        width: 100%;
+    }
+
+    .cookie-message {
+        grid-template-columns: 1fr; /* una colonna */
+        text-align: center;
+        gap: 10px;
+    }
+
+    .cookie-close {
+        justify-self: center; /* centra il bottone */
+    }
+
+}
+
