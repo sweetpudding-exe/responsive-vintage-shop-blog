@@ -2,13 +2,13 @@
 
 A responsive multi-page website about vintage fashion in Amsterdam, built as a front-end project using HTML5 and CSS3.
 
-## 🌿 Overview
+## Overview
 
 Vintage Amsterdam is a responsive website designed to help users discover vintage shops, flea markets and sustainable fashion locations across Amsterdam.
 
 The project focuses on clean layouts, responsive design and a consistent visual identity inspired by vintage aesthetics.
 
-## ✨ Features
+## Features
 
 - Responsive design for desktop and mobile
 - Multi-page website
@@ -17,14 +17,14 @@ The project focuses on clean layouts, responsive design and a consistent visual 
 - Navigation menu with mobile hamburger menu
 - Custom branding and visual identity
 
-## 🛠️ Built With
+## Built With
 
 - HTML5
 - CSS3
 - CSS Grid
 - Flexbox
 
-## 📚 What I learned
+## What I learned
 
 During this project I practiced:
 
@@ -34,21 +34,12 @@ During this project I practiced:
 - Designing a consistent user interface
 - Improving semantic HTML structure
 
-### Home
-![Home](design/home-desktop.png)
-
-### Markets
-![Markets](design/markets-desktop.png)
-
-### Contact
-![Contact](design/contact-desktop.png)
-
-## 🚀 Live Demo
+## Live Demo
 
 GitHub Pages:
 https://sweetpudding-exe.github.io/responsive-vintage-shop-blog/
 
-## 👩‍💻 Author
+## Author
 
 **Arianna Pelella**
 
